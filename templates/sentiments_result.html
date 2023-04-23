@@ -1,0 +1,76 @@
+<html>
+
+<body>
+    <h1></h1>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sentiments Result</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+        body,
+        h1 {
+            font-family: "Raleway", sans-serif
+        }
+
+        body,
+        html {
+            height: 100%
+        }
+
+        .bgimg {
+            background-image: url('https://www.cartridgepeople.com/info/application/files/4316/0329/5781/How-Creativity-Can-Improve-Your-Mental-Health_1.png');
+            min-height: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+        p{
+            color:black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+        <div class="w3-display-topleft w3-padding-large w3-xlarge">
+            <!-- <button>Back</button> -->
+            <p id="demo"></p>
+            <p style="word-wrap: break-word;">Hello there , Your mental health is {{result}}
+                 <!-- kindly seek help if you feel you are depressed or anxious or sad. Remember a help might not to be asked , but it's what we might need --> </p>
+
+            <script >
+                let hour = new Date().getHours();
+                let greeting;
+    
+                if (hour < 10) {
+                    greeting = "Good morning";
+                } else if (hour < 20) {
+                    greeting = "Good day";
+                } else {
+                    greeting = "Good evening";
+                }
+    
+                document.getElementById("demo").innerHTML = greeting;
+
+            </script>
+        </div>
+        <div class="w3-display-middle">
+            <h1 style="color:black;" class="w3-jumbo w3-animate-top">You are {{result}}</h1>
+            <p><a style="color:black; text-decoration: none; text-align: left; font-size: 25px; background-color: lightblue;" href="https://www.vandrevalafoundation.com/free-counseling">Kindly Visit these website if you need help :- Depressed </a></p>
+            <p><a style="color:black; text-decoration: none; text-align: left; font-size: 25px; background-color: lightblue;" href="https://my.clevelandclinic.org/health/diseases/9536-anxiety-disorders">Kindly Visit these website if you need help :- Anxious </a></p>
+
+            <!-- <h1 style="color:black;" class="w3-jumbo w3-animate-top">{{hello}}</h1> -->
+        </div>
+    </div>
+
+</body>
+
+</html>
